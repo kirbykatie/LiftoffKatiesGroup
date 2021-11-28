@@ -32,7 +32,7 @@ Features
     * Users will have the ability to view their profile. 
     * Profile will appear upon valid log into application on homepage.
 
-What we have to learn:
+What We Have to Learn
 
   Throughout the building of this application we will need to learn full integration of a third party API.  As well as user authentication, profile management and sharing. We will     also need to expand our knowledge of CSS to build the desired view of this application.
 
