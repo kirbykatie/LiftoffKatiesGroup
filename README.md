@@ -6,6 +6,7 @@ Overview
   Books, movies, vinyls, funko pops, the list can go on and on. Who doesn’t have something they love collecting? We’re designing an app that allows a user to have an account and       build a collection and review for all their items. We’ve started with books that users might have read along with a wishlist of books they want to add. 
 
 Features
+
   User Login
     * Users will have the ability to create a profile and log into the application.
     * Each user will have a profile page.
