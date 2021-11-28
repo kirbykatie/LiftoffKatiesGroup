@@ -7,27 +7,27 @@ Overview
 
 Features
 
-  User Login
+ * User Login
     * Users will have the ability to create a profile and log into the application.
     * Each user will have a profile page.
     * Profile page will appear on homepage after successful login
-  Search
+ *  Search
     * Users will have the ability to search by different search criteria such as author, title, or ISBN and view results
     * Search  will appear upon valid log into application on profile page and on the collection page and wish list page.
-  Create Book Collection
+ *  Create Book Collection
     * Users will have the ability to create a book collection from search results
     * Collection will appear in the user's profile page.
-  Create Wish List
+ *  Create Wish List
     * Users will have the ability to create a wish list from search results.
     * Wish list will appear in user’s profile page,
-  Create Review
+ *  Create Review
     * Users will have the ability to create a review for items in collection.
     * Reviews will appear with collection item details on the user's profile page. 
-  Manage
+ *  Manage
     * Users will have the ability to delete and to sort items in collection and wish list once logged into the profile.
     * Users will have the ability to edit their reviews on book collections items once logged into their profile.
     * Users will have the ability to select which items from profile are visible to visitors once logged into profile.
-  View
+ * View
     * Visitors will have the ability to view the user's wish list and visible collection items with user’s reviews.
     * Users will have the ability to view their profile. 
     * Profile will appear upon valid log into application on homepage.
