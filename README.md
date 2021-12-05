@@ -46,3 +46,6 @@ Technology Used
 
 Project Tracking
   https://trello.com/b/IS8NmQEA/liftoff-katies-team
+
+Project Wireframe
+  https://miro.com/app/board/uXjVOeUlZ6g=/
