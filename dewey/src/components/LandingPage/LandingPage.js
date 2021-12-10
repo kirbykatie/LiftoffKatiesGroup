@@ -7,7 +7,7 @@ function LandingPage () {
         <div>
            <header className= 'Header'> fill in </header>
            <h1 classname= 'Banner'>Welcome To Dewey!</h1>
-           <body className='Please-work'>test</body>
+           <body className='Container-left'>test</body>
         </div>
     )
 }

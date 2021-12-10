@@ -1,8 +1,15 @@
-.Please-work {
+.Container-left {
+    border-style: groove;
+    min-height: 35vh;
+    max-width: 45vh;
     text-align: center;
+    padding:15vh;
     font-size: calc(20px + 2vmin);
     color:rgb(116, 25, 151);
+    flex-direction:row;
+    align-items: left;
     justify-content: left;
+
   }
   .Header {
     background-color: #8e6b96;
