@@ -1,0 +1,21 @@
+.Please-work {
+    text-align: center;
+    font-size: calc(20px + 2vmin);
+    color:rgb(116, 25, 151);
+    justify-content: left;
+  }
+  .Header {
+    background-color: #8e6b96;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(20px + 2vmin);
+    color: white;
+  }
+  .Banner {
+    text-align: center;
+    color:rgb(7, 7, 7);
+    font-size: calc(25px + 2vmin);
+  }
