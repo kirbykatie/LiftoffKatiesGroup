@@ -3,10 +3,10 @@
     min-height: 35vh;
     max-width: 45vh;
     text-align: center;
-    padding:15vh;
+    padding: 20px;
     font-size: calc(20px + 2vmin);
     color:rgb(116, 25, 151);
-    flex-direction:row;
+    flex-direction:column;
     align-items: left;
     justify-content: left;
 
@@ -25,4 +25,9 @@
     text-align: center;
     color:rgb(7, 7, 7);
     font-size: calc(25px + 2vmin);
+  }
+  .Container {
+    min-height:0vh;
+    min-width:0vh;
+    justify-content:center;
   }
