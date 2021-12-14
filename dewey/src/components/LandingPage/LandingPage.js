@@ -7,10 +7,13 @@ function LandingPage () {
         <div>
            <header className= 'Header'> fill in </header>
            <h1 classname= 'Banner'>Welcome To Dewey!</h1>
-           <div className='Container'>
-           <body className='Container-left'>test</body>
-           <p>about us text</p>
-           
+           <div className='Grid-container'>
+            <div className='Grid-child-left'>
+             insert dewey logo 
+            </div>
+            <div className='Grid-child-right'>
+             About us info 
+            </div>
            </div>
         </div>
     )

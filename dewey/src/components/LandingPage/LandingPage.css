@@ -1,7 +1,5 @@
-.Container-left {
+.Grid-child-left {
     border-style: groove;
-    min-height: 45vh;
-    max-width: 50vh;
     text-align: center;
     margin-left: 20vh;
     margin-right: 20vh;
@@ -9,15 +7,9 @@
     margin-bottom: 20vh;
     font-size: calc(20px + 2vmin);
     color:rgb(116, 25, 151);
-    flex-direction:column;
-    align-items: left;
-    justify-content: left;
-
   }
-  .Container-right {
-    border-style: inset;
-    min-height: 45vh;
-    max-width: 50vh;
+  .Grid-child-right {
+    border-style: hidden;
     text-align: center;
     margin-left: 20vh;
     margin-right: 20vh;
@@ -26,8 +18,8 @@
     font-size: calc(20px + 2vmin);
     color:rgb(116, 25, 151);
     flex-direction:column;
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
   }
 
   .Header {
@@ -45,8 +37,8 @@
     color:rgb(7, 7, 7);
     font-size: calc(25px + 2vmin);
   }
-  .Container {
-    min-height:0vh;
-    min-width:0vh;
-    justify-content:center;
+  .Grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
