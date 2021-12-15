@@ -5,7 +5,7 @@ import './LandingPage.css';
 function LandingPage () {
     return (
         <div>
-           <header className= 'Header'> fill in </header>
+            <header className= 'Header'> fill in </header>
            <h1 classname= 'Banner'>Welcome To Dewey!</h1>
            <div className='Grid-container'>
             <div className='Grid-child-left'>
@@ -16,6 +16,10 @@ function LandingPage () {
             </div>
            </div>
         </div>
+
+
+           
+           
     )
 }
 
