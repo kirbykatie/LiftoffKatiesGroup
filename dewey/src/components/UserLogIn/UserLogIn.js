@@ -1,19 +1,29 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+import { useState } from 'react';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
+function validEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+
 export default function UserLogIn() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [validateEm, setValidateEm] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
+    setEmail(data.email);
+    setValidateEm(validEmail(data.get("email")));
+    console.log(validateEm);
     console.log({
       email: data.get("email"),
       password: data.get("password"),
@@ -48,10 +58,11 @@ export default function UserLogIn() {
           <Box
             component="form"
             onSubmit={handleSubmit}
-            noValidate
           >
             <TextField
               margin="normal"
+              error={validateEm}
+              helperText="Please enter a valid email."
               required
               fullWidth
               id="email"
@@ -64,15 +75,12 @@ export default function UserLogIn() {
               margin="normal"
               required
               fullWidth
+              inputProps={{ minLength: 6 }}
               name="password"
               label="Password"
               type="password"
               id="password"
               autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
             />
             <Button
               type="submit"
