@@ -12,16 +12,16 @@ export default function MediaCard() {
       <CardMedia
         component="img"
         height="140"
-        img src={`imgs/${books.image}`} 
-        alt="{books.title}"
+        img src={`imgs/${book.image}`} 
+        alt="{book.title}"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {books.title} <br/>
-          {books.author}
+          {book.title} <br/>
+          {book.author}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {books.summary}
+          {book.summary}
         </Typography>
       </CardContent>
       <CardActions>
