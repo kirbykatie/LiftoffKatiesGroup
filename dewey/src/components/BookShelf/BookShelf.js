@@ -1,11 +1,11 @@
-import * as React from "react";
+import React, {useEffect, useState} from "react";
 import MediaCard from "../ItemCard/ItemCard";
 
 function List() {
-  //const [book, setBook] = useState([]);
+  const [book, setBook] = useState([]);
 
   useEffect(() => {
-    fetch('/Users/katy/Documents/LiftOff/LiftoffKatiesGroup/dewey/public/FakeData.json')
+    fetch('https://api.jsonbin.io/b/61db29cb2675917a628d0fdd')
       .then((response) => response.json())
       .then((result) => setBook(result))
       .catch((err) => {
@@ -15,11 +15,11 @@ function List() {
 
   return (
     <div>
-      {" "}
+      
       <h1>Your Library</h1>
       <ul>
-        {book.map((book) => (
-          <MediaCard/>
+        {book.map(books => (
+          <MediaCard book={books} />
         ))}
       </ul>
     </div>
