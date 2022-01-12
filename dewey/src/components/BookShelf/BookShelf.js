@@ -2,35 +2,26 @@ import React, {useEffect, useState} from "react";
 import MediaCard from "../ItemCard/ItemCard";
 
 function List() {
-    const [apiData, setApiData ] = useState([]);
+  const [book, setBook] = useState([]);
 
-    useEffect(( ) => {
-    
-    var myHeaders = new Headers();
-    myHeaders.append("qFonYTRYwNoLrx2R", "gUJoLA27E1C32mrq");
-  
-    var requestOptions = {
-    method: 'GET',
-    headers: myHeaders,
-    redirect: 'follow'
-    };
-  
-    fetch("https://api.jsonbin.io/v3/b/618336b69548541c29cd57f7", requestOptions)
-    .then(response => response.json())
-    .then(result => setApiData(result))
-    .catch(error => console.log('error', error));
-     console.log();
-    },[]);
+  useEffect(() => {
+    fetch('https://api.jsonbin.io/b/61db29cb2675917a628d0fdd/1')
+      .then((response) => response.json())
+      .then((result) => setBook(result))
+      .catch((err) => {
+        console.error((err) => console.error(err));
+      });
+  }, []);
 
   return (
     <div>
       
       <h1>Your Library</h1>
-     
-        {apiData.map(apiData => (
-          <MediaCard apiData={apiData} />
+      <ul>
+        {book.map(book => (
+          <MediaCard book={book} />
         ))}
-    
+      </ul>
     </div>
   );
 }
