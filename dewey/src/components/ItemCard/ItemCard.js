@@ -6,23 +6,23 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function MediaCard( {book}) {
+export default function MediaCard( {apiData}) {
   return (
     <div>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        img src={`imgs/${book.image}`} 
+        img src={`imgs/${apiData.image}`} 
         alt="{book.title}"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {book.title} <br/>
-          {book.author}
+          {apiData.title} <br/>
+          {apiData.author}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {book.summary}
+          {apiData.summary}
         </Typography>
       </CardContent>
       <CardActions>
