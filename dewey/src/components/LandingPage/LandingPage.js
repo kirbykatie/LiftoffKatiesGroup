@@ -6,9 +6,7 @@ import './LandingPage.css';
 function LandingPage () {
     return (
         <div>
-            <header className= 'Header'>
-
-            </header>
+            <header className= 'Header'></header>
            <h1 classname= 'Banner'>Welcome To Dewey!</h1>
            <div className='Grid-container'>
             <div className='Grid-child-left'>
