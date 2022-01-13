@@ -1,0 +1,22 @@
+{
+	"books": [
+		{
+			"id": 1,
+			"title": "The Hobbit",
+			"author": "J.R.R. Tolkien",
+            "isbn": "978-0547928227"
+		},
+		{
+			"id": 2,
+			"title": "The Midnight Library: A Novel",
+			"author": "Matt Haig",
+            "isbn": "978-1443455879"
+		},
+		{
+			"id": 3,
+			"title": "The Lost Apothecary: A Novel",
+			"author": "Sarah Penner",
+            "isbn": "978-0778311010"
+		}
+	]
+}
