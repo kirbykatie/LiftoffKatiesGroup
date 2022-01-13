@@ -7,28 +7,30 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Delete from './ItemDelete';
 
-export default function MediaCard() {
+export default function MediaCard( {book}) {
   return (
+    <div>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
+        img src={`imgs/${book.image}`} 
+        alt="{book.title}"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {book.title} <br/>
+          {book.author}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {book.summary}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
+        <Button size="small">Review</Button>
         <Delete book={book} />
       </CardActions>
     </Card>
+    </div>
   );
 }
