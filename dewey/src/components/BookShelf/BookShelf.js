@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import BookForm from "../BookForm/BookForm";
+import NewManualBook from "../BookForm/NewManualBook";
 import MediaCard from "../ItemCard/ItemCard";
 
 function List() {
@@ -23,10 +23,8 @@ function List() {
     <div>
       <h1>Add a Book Manually to library</h1>
   
-        <BookForm
-        id={book.title +1}
-        title={book.title}
-        author={book.author}
+        <NewManualBook
+        setBook={setBook}
         />
     
       
