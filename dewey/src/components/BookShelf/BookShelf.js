@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import MediaCard from "../ItemCard/ItemCard";
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
 
 function List() {
   const [book, setBook] = useState([]);
@@ -13,13 +15,18 @@ function List() {
 
   return (
     <div>
+      <Container maxwidth="sm">
+      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+      <Grid container item spacing={2}>
       
-      <h1>Your Library</h1>
-      <ul>
+    
         {book.map(book => (
           <MediaCard book={book} />
         ))}
-      </ul>
+    
+      </Grid>
+      </Grid>
+      </Container>
     </div>
   );
 }

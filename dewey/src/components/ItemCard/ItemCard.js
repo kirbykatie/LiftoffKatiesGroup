@@ -19,10 +19,12 @@ export default function MediaCard( {book}) {
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {book.title} <br/>
-          {book.author}
+        
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {book.summary}
+          Author: {book.title}
+          <br/>
+          ISBN: {book.isbn}
         </Typography>
       </CardContent>
       <CardActions>
