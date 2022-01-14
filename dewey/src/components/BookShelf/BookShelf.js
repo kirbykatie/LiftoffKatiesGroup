@@ -22,16 +22,16 @@ function List() {
   return (
     <div>
       <h1>Add a Book Manually to library</h1>
-  
+        
         <NewManualBook
-        setBook={setBook}
+        book={book}        
         />
     
       
       <h1>Your Library</h1>
       <ul>
         {book.map(book => (
-          <MediaCard book={book} />
+          <MediaCard book={book} key={book.title + 1} />
         ))}
       </ul>
     </div>
