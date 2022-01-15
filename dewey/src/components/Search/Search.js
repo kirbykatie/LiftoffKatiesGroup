@@ -11,7 +11,7 @@ const [apiData, setApiData ] = useState('');
   redirect: 'follow'
   };
 
-  fetch("https://api.jsonbin.io/v3/b/618336b69548541c29cd57f7", requestOptions)
+  fetch("https://openlibrary.org/isbn/.json", requestOptions)
   .then(response => response.json())
   .then(result => setApiData(result))
   .catch(error => console.log('error', error));
