@@ -14,7 +14,7 @@ function LandingPage () {
              <img src="Assests/FullLogo.png" alt='Dewey Logo'></img>
             </div> 
             <div className='Grid-child-right'>
-             Dewey is the brain child of four beginning developers. This app lets you easily organize and manage your book collection. It even has the ability to diplay them on a "Bookshelf" so you can show off that awesome cover artwork. When you can't remeber if you already have that book, Dewey does!
+             Dewey is the brain child of four beginning developers. This app lets you easily organize and manage your book collection. It even has the ability to diplay them on a "Bookshelf" so you can show off that awesome cover artwork. When you can't remember if you already have that book, Dewey does!
             </div>
            </div>
            <div>
