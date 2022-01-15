@@ -4,6 +4,7 @@ import MediaCard from "../ItemCard/ItemCard";
 
 function List() {
   const [book, setBook] = useState([]);
+  console.log(book);
 
   useEffect(() => {
     fetch('https://api.jsonbin.io/b/61db29cb2675917a628d0fdd/1')
@@ -22,9 +23,10 @@ function List() {
   return (
     <div>
       <h1>Add a Book Manually to library</h1>
-        
+
         <NewManualBook
-        book={book}        
+        books={book}   
+        setBooks={setBook}     
         />
     
       
