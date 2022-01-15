@@ -39,10 +39,5 @@
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
-  .Small-logo {
-    border-style: solid;
-    max-height: 7vh;
-    max-width: 14vh;
-    background-color: yellow;
-  }
+  
   
