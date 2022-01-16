@@ -1,8 +1,18 @@
-const [apiData, setApiData ] = useState('');
+//text input box 
+//verify then save isbn number with use state oustide of use effect
+//"+ state variable isbn"
+//create raw data variable for isn input 
 
+import { useState } from "react";
+
+function Search () {
+  const [rawInputData, setInputData] = useState ('');
+  const [apiData, setApiData ] = useState('');
+  const [inputedIsbn, setInputedIsbn] = useState('');
   useEffect(( ) => {
   
-  var myHeaders = new Headers();
+  if (inputedIsbn != '' ) {
+    var myHeaders = new Headers();
   myHeaders.append("qFonYTRYwNoLrx2R", "gUJoLA27E1C32mrq");
 
   var requestOptions = {
@@ -11,9 +21,17 @@ const [apiData, setApiData ] = useState('');
   redirect: 'follow'
   };
 
-  fetch("https://openlibrary.org/isbn/.json", requestOptions)
-  .then(response => response.json())
-  .then(result => setApiData(result))
-  .catch(error => console.log('error', error));
-   console.log();
-  },[]);
+  fetch('https://openlibrary.org/isbn/'+'')
+   .then(res => res.json())
+   .then(data => {
+        fetch('https://covers.openlibrary.org/b/isbn/-S.jpg')
+        .then(res => res.json())
+        .then(finalData => {console.log(finalData)})
+    })
+  }
+  
+  }, [inputedIsbn])
+
+}
+
+export default Search;
