@@ -12,11 +12,8 @@ function App() {
       <div>
       <NavBar/>
       <LandingPage/>
-<<<<<<< HEAD
       <UserSignUp />
-=======
       <UserLogIn />
->>>>>>> a5249d6bb5a897cd294f7a8c934ab6225026e88f
       </div>
   );
 }
