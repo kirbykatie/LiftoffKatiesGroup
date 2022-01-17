@@ -8,6 +8,9 @@ import Typography from '@mui/material/Typography';
 import Delete from './ItemDelete';
 
 export default function MediaCard( {book}) {
+  function handleDelete(event) {
+    
+  }
   return (
     <div>
     <Card sx={{ maxWidth: 345 }}>
@@ -28,7 +31,12 @@ export default function MediaCard( {book}) {
       </CardContent>
       <CardActions>
         <Button size="small">Review</Button>
-        <Delete book={book} />
+        <Button size="small"
+        variant="outlined"
+        color="error" 
+        onClick={handleDelete}>
+        Delete
+        </Button>
       </CardActions>
     </Card>
     </div>

@@ -20,6 +20,7 @@ function NavBar() {
                 <Toolbar>        
                     <Typography>  */}
                          <nav>
+                            <Link to='/LogIn'>Log In</Link>
                             <Link to='/LandingPage'>Home</Link>
                             <Link to='/Search'>Search</Link>
                             <Link to='/BookShelf'>BookShelf</Link>
