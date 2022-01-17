@@ -13,6 +13,8 @@ function List() {
       });
   }, []);
 
+  handleDelete
+
   return (
     <div>
       
