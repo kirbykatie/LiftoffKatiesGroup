@@ -13,7 +13,12 @@ function List() {
       });
   }, []);
 
-  handleDelete
+ function handleDelete(event) {
+    let itemIndex = 0;
+    itemIndex = event.target.id;
+    setBook.splice(itemIndex, 1)
+    console.log(setBook)
+ };
 
   return (
     <div>
