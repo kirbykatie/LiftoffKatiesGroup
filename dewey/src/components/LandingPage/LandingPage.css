@@ -1,23 +1,31 @@
-.Container-left {
-    border-style: groove;
-    min-height: 35vh;
-    max-width: 45vh;
+.Grid-child-left {
+    border-style: hidden;
     text-align: center;
-    padding: 20px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: calc(20px + 2vmin);
+  }
+  .Grid-child-right {
+    border-style: hidden;
+    text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     font-size: calc(20px + 2vmin);
     color:rgb(116, 25, 151);
     flex-direction:column;
-    align-items: left;
-    justify-content: left;
-
+    align-items: center;
+    justify-content: center;
   }
+
   .Header {
     background-color: #8e6b96;
     min-height: 10vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(20px + 2vmin);
     color: white;
   }
@@ -26,8 +34,15 @@
     color:rgb(7, 7, 7);
     font-size: calc(25px + 2vmin);
   }
-  .Container {
-    min-height:0vh;
-    min-width:0vh;
-    justify-content:center;
+  .Grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
   }
+  .Small-logo {
+    border-style: solid;
+    max-height: 7vh;
+    max-width: 14vh;
+    background-color: yellow;
+  }
+  
