@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Delete from './ItemDelete';
 
 export default function MediaCard( {book}) {
   return (
@@ -27,7 +28,7 @@ export default function MediaCard( {book}) {
       </CardContent>
       <CardActions>
         <Button size="small">Review</Button>
-        <Button size="small">Delete</Button>
+        <Delete book={book} />
       </CardActions>
     </Card>
     </div>
