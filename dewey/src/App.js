@@ -5,12 +5,14 @@ import UserLogIn from './components/UserLogIn/UserLogIn';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import BookShelf from './components/BookShelf/BookShelf';
 import NavBar from './components/NavBar/NavBar';
+import UserSignUp from './components/UserSignUp/UserSignUp'
 
 
 function App() {
   
 
   return (
+
       <Router>
         <header>
         <NavBar/>
