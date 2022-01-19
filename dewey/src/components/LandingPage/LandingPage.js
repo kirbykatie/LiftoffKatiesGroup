@@ -1,6 +1,7 @@
 import React from 'react';
 import './LandingPage.css';
 import List from '../BookShelf/BookShelf';
+import Search from '../Search/Search';
 
 
 
@@ -20,6 +21,8 @@ function LandingPage () {
            <div>
                App Features
            </div>
+           <Search/>
+
         </div>
 
 

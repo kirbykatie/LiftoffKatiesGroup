@@ -4,7 +4,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import UserLogIn from './components/UserLogIn/UserLogIn';
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-
+import Search from './components/Search/Search'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <NavBar/>
       <LandingPage/>
       <UserLogIn />
+      <Search/>
       </div>
   );
 }
