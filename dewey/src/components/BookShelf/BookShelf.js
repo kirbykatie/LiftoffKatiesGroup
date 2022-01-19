@@ -5,7 +5,7 @@ function List() {
   const [book, setBook] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.jsonbin.io/b/61db29cb2675917a628d0fdd/1')
+    fetch('https://api.jsonbin.io/b/61db29cb2675917a628d0fdd/2')
       .then((response) => response.json())
       .then((result) => setBook(result))
       .catch((err) => {
