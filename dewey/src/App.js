@@ -3,9 +3,10 @@ import './App.css';
 import LandingPage from './components/LandingPage/LandingPage';
 import UserLogIn from './components/UserLogIn/UserLogIn';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import BookShelf from './components/BookShelf/BookShelf';
+import List from './components/BookShelf/BookShelf';
 import NavBar from './components/NavBar/NavBar';
 import UserSignUp from './components/UserSignUp/UserSignUp'
+import BookShelf from './components/BookShelf/BookShelf'
 
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
             <Route exact path='/'>
               <LandingPage/>
             </Route>
-            <Route path="/bookshelf">
-              <BookShelf/>
+            <Route path="/BookShelf">
+              <List/>
             </Route>
             <Route path="/userLogin">
               <UserLogIn/>

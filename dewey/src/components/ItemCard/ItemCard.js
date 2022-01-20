@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Delete from './ItemDelete';
+import handleDelete from '../BookShelf/BookShelf'
 
 export default function MediaCard( {book}) {
   return (
@@ -28,7 +28,13 @@ export default function MediaCard( {book}) {
       </CardContent>
       <CardActions>
         <Button size="small">Review</Button>
-        <Delete book={book} />
+        <Button size="small"
+        id={book.id}
+        variant="outlined"
+        color="error" 
+        onClick={handleDelete}>
+        Delete
+        </Button>
       </CardActions>
     </Card>
     </div>
