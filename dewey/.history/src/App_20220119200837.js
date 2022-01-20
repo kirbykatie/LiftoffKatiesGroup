@@ -6,13 +6,16 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import BookShelf from './components/BookShelf/BookShelf';
 import NavBar from './components/NavBar/NavBar';
 import UserSignUp from './components/UserSignUp/UserSignUp'
-import List from './components/BookShelf/BookShelf';
 
 
 function App() {
   
 
   return (
+<<<<<<< HEAD
+=======
+
+>>>>>>> c05aa86e7b6fc2d0d91ad82f303f5c15558d3bc6
       <Router>
         <header>
         <NavBar/>
@@ -32,6 +35,10 @@ function App() {
 
         </main>
       </Router>
+<<<<<<< HEAD
+
+=======
+>>>>>>> c05aa86e7b6fc2d0d91ad82f303f5c15558d3bc6
   );
 }
 

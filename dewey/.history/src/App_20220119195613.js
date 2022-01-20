@@ -13,6 +13,7 @@ function App() {
   
 
   return (
+
       <Router>
         <header>
         <NavBar/>
@@ -29,6 +30,8 @@ function App() {
               <UserLogIn/>
             </Route>
           </Switch>
+          {/* <Route path="/" component={BookShelf}>
+          </Route> */}
 
         </main>
       </Router>
