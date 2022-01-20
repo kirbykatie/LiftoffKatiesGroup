@@ -14,7 +14,7 @@ export default function MediaCard( {book}) {
       <CardMedia
         component="img"
         height="140"
-        img src={`imgs/${book.image}`} 
+        img src={`Assests/${book.image}`} 
         alt="{book.title}"
       />
       <CardContent>

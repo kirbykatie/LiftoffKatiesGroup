@@ -20,10 +20,18 @@ function NavBar() {
                 <Toolbar>        
                     <Typography>  */}
                          <nav>
-                            <Link to='/LogIn'>Log In</Link>
-                            <Link to='/LandingPage'>Home</Link>
-                            <Link to='/Search'>Search</Link>
-                            <Link to='/BookShelf'>BookShelf</Link>
+                            <li>
+                            <Link to='/'>Home</Link>
+                            </li>
+                            <li>
+                            <Link to='/userLogin'>Login</Link>
+                            </li>
+                            <li>
+                            <Link to='/search'>Search</Link>
+                            </li>
+                            <li>
+                            <Link to='/bookShelf'>BookShelf</Link>
+                            </li>
                         </nav>
                     {/* </Typography>
                  </Toolbar>
