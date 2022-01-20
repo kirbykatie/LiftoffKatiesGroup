@@ -13,6 +13,10 @@ function App() {
   
 
   return (
+<<<<<<< HEAD
+=======
+
+>>>>>>> c05aa86e7b6fc2d0d91ad82f303f5c15558d3bc6
       <Router>
         <header>
         <NavBar/>
@@ -32,6 +36,10 @@ function App() {
 
         </main>
       </Router>
+<<<<<<< HEAD
+
+=======
+>>>>>>> c05aa86e7b6fc2d0d91ad82f303f5c15558d3bc6
   );
 }
 

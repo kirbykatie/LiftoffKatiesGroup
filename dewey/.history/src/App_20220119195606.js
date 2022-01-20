@@ -6,13 +6,13 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import BookShelf from './components/BookShelf/BookShelf';
 import NavBar from './components/NavBar/NavBar';
 import UserSignUp from './components/UserSignUp/UserSignUp'
-import List from './components/BookShelf/BookShelf';
 
 
 function App() {
   
 
   return (
+
       <Router>
         <header>
         <NavBar/>
@@ -29,6 +29,8 @@ function App() {
               <UserLogIn/>
             </Route>
           </Switch>
+          {/* <Route path="/" component={BookShelf}>
+          </Route> */}
 
         </main>
       </Router>
